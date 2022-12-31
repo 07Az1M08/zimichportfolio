@@ -1,0 +1,378 @@
+.navbar-brand {
+  border: solid 1px rgb(168, 168, 168);
+  padding: 0.5rem 1rem;
+  transition: linear 0.2s;
+}
+.navbar-brand:hover {
+  border-color: white;
+}
+
+.navbar-nav {
+  gap: 20px;
+}
+
+.nava {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nava:hover {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: underline;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+#hero {
+  width: 100%;
+  height: 100vh;
+  background: url(../img/ronan-furuta-ZJ8M0bfiu8U-unsplash.jpg) fixed top center;
+  background-size: cover;
+  position: relative;
+}
+
+#hero:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#hero .container {
+  position: relative;
+  padding-top: 75px;
+}
+
+#hero h1 {
+  margin: 0;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 64px;
+  color: white;
+  padding-top: 50px;
+}
+
+#hero h2 {
+  margin: 10px 0 0 0;
+  font-size: 24px;
+  color: rgb(229, 229, 229);
+}
+
+#hero .icon-box h3 {
+  font-weight: 700;
+  margin-top: 10px;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#hero .icon-box h3 a {
+  color: rgb(229, 229, 229);
+  text-decoration: none;
+  transition: linear 0.2s;
+}
+
+#hero .icon-box h3 a:hover {
+  color: #ffc451;
+  text-decoration: none;
+}
+
+.icon-box {
+  padding: 30px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  height: 100%;
+  text-align: center;
+  transition: linear 0.2s;
+}
+
+.icon-box:hover {
+  border-color: #ffc451;
+}
+.about li {
+  list-style: none;
+}
+
+.cta {
+  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(2, 2, 2, 0.8)),
+    url(../img/ronan-furuta-ZJ8M0bfiu8U-unsplash.jpg) fixed bottom center;
+  padding: 80px 0;
+  color: #fff;
+}
+.cta h3 {
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.cta-btn {
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border: 2px solid white;
+  border-radius: 4px;
+  color: #fff;
+  margin-top: 10px;
+  transition: linear 0.2s;
+  text-decoration: none;
+}
+
+.cta-btn:hover {
+  background-color: #ffc451;
+  border-color: #ffc451;
+  color: #151515;
+}
+
+.carousel-indicators button {
+  border-color: #ffc451;
+}
+
+.carousel-inner .carousel-item {
+  max-height: 500px;
+}
+
+#carouselExampleSlidesOnly {
+  padding-bottom: 50px;
+}
+
+.team {
+  padding: 60px;
+}
+
+.team .member {
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
+}
+
+.team .member .member-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.team .member .member-img .social {
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  right: 0;
+  opacity: 0;
+  transition: ease-in-out 0.2s;
+}
+
+.team .member .member-img .social a {
+  margin: 0 3px;
+  padding-top: 7px;
+  width: 36px;
+  height: 36px;
+  display: inline-block;
+}
+
+.team .member .member-img .member-info {
+  padding: 25px 15px;
+}
+
+.team .member .member-img .member-info h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.team .member .member-img .member-info span {
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  color: #aaa;
+}
+
+.team .member .member-img .member-info p {
+  font-style: italic;
+  font-size: 14px;
+  line-height: 26px;
+  color: #777;
+}
+
+.team .member:hover .social {
+  opacity: 1;
+  bottom: 15px;
+}
+
+.col-lg-4 {
+  margin-bottom: 20px;
+}
+
+.services .icon-box {
+  border: solid 1px #afafaf;
+  padding: 80px 20px;
+  transition: all ease-in-out 0.2s;
+  background: #fff;
+}
+
+.services .icon-box .icon {
+  margin: 0 auto;
+  width: 64px;
+  height: 64px;
+  background-color: #ffc451;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  margin-bottom: 20px;
+}
+
+.services .icon-box h4 {
+  margin-bottom: 15px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.services .icon-box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.services .icon-box:hover {
+  border-color: white;
+  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.5);
+  transform: translate(-20px);
+}
+
+.map {
+  margin: 20px 0;
+}
+
+.contact .info .info-icon {
+  background: #ffc451;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  float: left;
+}
+
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.contact .info p {
+  padding: 0 0 0 60px;
+  font-size: 14px;
+}
+
+.footer-top {
+  margin-top: 20px;
+  background: #151515;
+  color: #fff;
+  border-bottom: solid 1px #222;
+  padding: 60px 0 30px 0;
+}
+
+.footer-top .footer-info {
+  margin-bottom: 3px;
+}
+
+.footer-top .footer-info h3 {
+  font-size: 28px;
+  margin: 0 0 20px 0;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.footer-top .footer-info p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+
+.footer-top .social-links a {
+  width: 36px;
+  height: 36px;
+  display: inline-block;
+  margin-right: 4px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.footer-top .social-links a:hover {
+  background: #ffc451;
+}
+.footer-top h4 {
+  font-size: 24px;
+  font-weight: 600;
+  padding-bottom: 12px;
+}
+
+.footer-links {
+  margin-bottom: 30px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.f-link {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.f-link a {
+  margin-left: 5px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.f-link a:hover {
+  color: #ffc451;
+}
+
+.footer-newsletter form {
+  margin-top: 30px;
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+@media (max-width: 980px) {
+  #hero h1 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 45px;
+    color: white;
+    padding-top: 90px;
+  }
+  #hero h2 {
+    margin: 10px 0 0 0;
+    font-size: 18px;
+    color: rgb(229, 229, 229);
+  }
+  .icon-box {
+    padding: 10px 5px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    height: 100%;
+    text-align: center;
+    transition: linear 0.2s;
+  }
+  #hero .icon-box h3 {
+    font-weight: 700;
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 0;
+  }
+}
