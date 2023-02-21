@@ -1,0 +1,164 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: #474747;
+}
+
+.main {
+  height: 100vh;
+}
+
+.container {
+  max-width: 700px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.info {
+  flex: 1 1 auto;
+}
+
+.red-score {
+  text-align: center;
+  color: #fff;
+  font-size: 52px;
+  padding: 25px 0;
+}
+
+.red-btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.red-btn {
+  width: 150px;
+  height: 150px;
+  background-color: #ff5656;
+  border-radius: 20px;
+  border: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  cursor: pointer;
+  transition: transform 0.2s ease-in;
+}
+
+.winner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3D(-50%, -50%, 0);
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 82px;
+  color: #fff;
+  text-align: center;
+  display: none;
+}
+
+.play-again {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3D(-50%, -50%, 0);
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 82px;
+  color: #fff;
+  background: linear-gradient(93.58deg, #ff5656 0%, #59afff 100%);
+  border-radius: 20px;
+  text-align: center;
+  border: none;
+  padding: 8px 30px;
+  cursor: pointer;
+  display: none;
+}
+
+.blue-score {
+  text-align: center;
+  color: #fff;
+  font-size: 52px;
+  padding: 25px 0;
+}
+
+.blue-btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: auto;
+}
+
+.blue-btn {
+  width: 150px;
+  height: 150px;
+  background-color: #59afff;
+  border-radius: 20px;
+  border: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  cursor: pointer;
+  transition: transform 0.2s ease-in;
+}
+
+.red-active {
+  transform: translateY(50px);
+}
+
+.blue-active {
+  transform: translateY(-50px);
+}
+
+@media (max-width: 700px) {
+  .blue-btn,
+  .red-btn {
+    width: 100px;
+    height: 100px;
+  }
+
+  .winner {
+    font-size: 32px;
+  }
+  .play-again {
+    font-size: 28px;
+    padding: 8px 30px;
+    line-height: 30px;
+  }
+
+  .red-score,
+  .blue-score {
+    padding: 0;
+    margin: 65px 0;
+  }
+}
+
+@media (max-width: 420px) {
+  .blue-btn,
+  .red-btn {
+    width: 75px;
+    height: 75px;
+  }
+
+  .winner {
+    font-size: 26px;
+  }
+
+  .play-again {
+    font-size: 24px;
+    padding: 8px 26px;
+    line-height: 24px;
+  }
+}

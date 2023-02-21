@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>tik-tok-toe</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="container">
+        <div class="wrapper">
+          <div class="red-team">
+            <div class="red-score">Score: 0</div>
+            <div class="red-btns">
+              <button
+                class="btn red-btn"
+                data-btn="s"
+                style="background-image: url(img/s.svg)"
+              ></button>
+              <button
+                class="btn red-btn"
+                data-btn="r"
+                style="background-image: url(img/rock.svg)"
+              ></button>
+              <button
+                class="btn red-btn"
+                data-btn="p"
+                style="background-image: url(img/paper.svg)"
+              ></button>
+            </div>
+          </div>
+
+          <div class="info">
+            <h1 class="winner">Winner - <span class="win"></span></h1>
+            <button class="play-again">Play again</button>
+          </div>
+
+          <div class="blue-team">
+            <div class="blue-btns">
+              <button
+                class="btn blue-btn"
+                data-btn="s"
+                style="background-image: url(img/s.svg)"
+              ></button>
+              <button
+                class="btn blue-btn"
+                data-btn="r"
+                style="background-image: url(img/rock.svg)"
+              ></button>
+              <button
+                class="btn blue-btn"
+                data-btn="p"
+                style="background-image: url(img/paper.svg)"
+              ></button>
+            </div>
+            <div class="blue-score">Score: 0</div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
